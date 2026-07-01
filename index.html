@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Mood Tracker</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Weather & Mood Tracker</h1>
+            <button id="theme-toggle">Toggle Theme</button>
+        </header>
+
+        <main>
+            <section class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name... (e.g., London)">
+                <button id="search-btn">Get Weather</button>
+            </section>
+
+            <section id="weather-display" class="hidden">
+                <h2 id="city-name"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                
+                <div class="mood-section">
+                    <label for="mood-input">How does this weather make you feel?</label>
+                    <input type="text" id="mood-input" placeholder="e.g., Cozy, Productive, Lazy">
+                    <button id="save-log-btn">Save Log</button>
+                </div>
+            </section>
+
+            <section class="logs-section">
+                <h3>Your Saved Weather Logs</h3>
+                <ul id="logs-list"></ul>
+                <button id="clear-logs-btn" class="danger-btn">Clear History</button>
+            </section>
+        </main>
+    </div>
+
+   <script src="src/app.js"></script>
+</body>
+</html>
